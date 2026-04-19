@@ -1,0 +1,19 @@
+class ICombatable(ABC):
+    @abstractmethod
+    def atacar(self, objetivo): ...
+    @abstractmethod
+    def recibir_dano(self, cantidad): ...
+
+class IMovible(ABC):
+    @abstractmethod
+    def mover_a_casilla(self, casilla): ...
+
+class IPersistible(ABC):
+    @abstractmethod
+    def guardar_estado(self): ...
+
+class IVisible(ABC):
+    @abstractmethod
+    def mostrar_en_mapa(self): ...
+    @abstractmethod
+    def get_nombre(self): ...
