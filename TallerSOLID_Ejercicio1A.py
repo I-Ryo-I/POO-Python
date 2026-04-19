@@ -1,0 +1,13 @@
+# Python
+class Personaje:
+    def __init__(self, nombre, vida):
+        self.nombre = nombre
+        self.vida = vida
+    def atacar(self, objetivo): ...
+    def recibir_dano(self, cantidad): ...
+
+class PersonajeRenderer:
+    def mostrar_en_pantalla(self, p): ...
+
+class PersonajeRepositorio:
+    def guardar_en_base_de_datos(self, p): ...
